@@ -28,6 +28,7 @@ public class Constant {
 
     public static class NewWorkflow {
         public static final String WORKFLOW_TITLE = "Test";
+        public static final String DATE_FOR_OBJECT = "01.11.2024";
     }
 
     public static class PathsAndFiles {

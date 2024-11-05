@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.base.BasePage;
 import pages.bi.RegistryPage;
+import pages.taskTracker.TasktrackerPage;
 
 import static constants.Constant.Credentials.USER_NAME;
 
@@ -20,6 +21,9 @@ public class VisaryHomePage extends BasePage {
     private final By buttonWorkflow = By.xpath("//span[text()='Workflow']");
     //кнопка bi
     private final By buttonBi = By.xpath("//*[@id=\"vis-app-module-menu__item_0\"]");
+
+    //TODO Есть проблема с этим xpath, дальше хз, возможно остальные по осохранению и удалению объекта тоже будут проблемными
+    private final By  buttonTaskTracker = By.xpath("//a[@href='/tasktracker']");
 
     public VisaryHomePage checkUser (){
 
@@ -44,4 +48,9 @@ public class VisaryHomePage extends BasePage {
         return this;
     }
 
+    public VisaryHomePage clickTasKTracker (){
+        WebElement webElement = driver.findElement(buttonTaskTracker);
+        webElement.click();
+        return this;
+    }
 }

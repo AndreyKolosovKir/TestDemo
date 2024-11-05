@@ -7,6 +7,8 @@ import pages.AuthorizationVisary.AuthorizationVisary;
 import pages.VisaryHomePage.VisaryHomePage;
 import pages.WorkflowPage.WorkflowPage;
 import pages.bi.RegistryPage;
+import pages.projects.ProjectsPage;
+import pages.taskTracker.TasktrackerPage;
 import tests.common.CommonActions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -28,6 +30,10 @@ public class BaseTest {
     protected WorkflowPage workflowPage = new WorkflowPage(driver);
 
     protected RegistryPage registryPage = new RegistryPage(driver);
+
+    protected ProjectsPage projectsPage = new ProjectsPage(driver);
+
+    protected TasktrackerPage tasktrackerPage = new TasktrackerPage(driver);
 
     @AfterEach
     public void clearCookiesAndLocalStorage() {

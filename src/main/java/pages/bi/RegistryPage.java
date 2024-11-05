@@ -10,14 +10,9 @@ public class RegistryPage extends BasePage {
     public RegistryPage(WebDriver driver) {
         super(driver);
     }
-
     private final By buttonRegistry = By.xpath("//a[@href='/bi/registry' and @class='nav-link']");
-
     private final By demoReport = By.xpath("//td[text()='" + NAME_REPORT_FOR_EXPORT + "']");
-
-    //TODO
     private final By buttonExport = By.cssSelector(".dxrd-preview-export-menu-item.dx-template-wrapper.dx-item-content.dx-menu-item-content");
-
     private final By xlsxEx = By.xpath("//div[@class='dxrd-preview-export-menu-item dx-template-wrapper dx-item-content dx-menu-item-content' and @title='XLSX']");
 
     public RegistryPage clickRegistry() {
